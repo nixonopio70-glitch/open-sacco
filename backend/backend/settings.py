@@ -16,7 +16,7 @@ from pathlib import Path
 from datetime import timedelta
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-from dotenv import load_dotenv  
+from dotenv import load_dotenv   # pyright: ignore[reportMissingImports]
 
 # This loads your .env file into os.environ
 load_dotenv(BASE_DIR / '.env')
@@ -171,12 +171,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'isaacmain72@gmail.com'
-EMAIL_HOST_PASSWORD = 'nnxp gcdl kyyn bagg'
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+# EMAIL_HOST_USER = 'isaacmain72@gmail.com'
+# EMAIL_HOST_PASSWORD = 'nnxp gcdl kyyn bagg'
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
